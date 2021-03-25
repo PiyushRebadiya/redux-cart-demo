@@ -1,0 +1,102 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "user": "piyush",
+      "email": "p@gmail.com",
+      "password": "112233",
+      "mobile": 96775678820
+    },
+    {
+      "id": 2,
+      "user": "manish",
+      "email": "m@gmail.com",
+      "password": "000000",
+      "mobile": 67651434654
+    },
+    {
+      "user": "savan",
+      "email": "s@gmail.com",
+      "password": "123456",
+      "mobile": "9856984235",
+      "id": 4
+    },
+    {
+      "user": "raj",
+      "email": "r@gmail.com",
+      "password": "56987414",
+      "mobile": "51696465146",
+      "id": 5
+    },
+    {
+      "user": "piyush",
+      "email": "sahuja@gmail.com",
+      "password": "123",
+      "mobile": "9856984235",
+      "id": 8
+    },
+    {
+      "user": "mehul",
+      "email": "mehul@gmail.com",
+      "password": "123123123",
+      "mobile": "9925488542",
+      "id": 9
+    },
+    {
+      "user": "piyush",
+      "email": "qwerty@gmail.com",
+      "password": "1122334455",
+      "mobile": "51696465146",
+      "id": 10
+    },
+    {
+      "user": "rrr",
+      "email": "r@gmail.com",
+      "password": "123",
+      "mobile": "9856984235",
+      "id": 11
+    },
+    {
+      "user": "bhano",
+      "email": "b@gmail.com",
+      "password": "11122233",
+      "mobile": "6589552545",
+      "id": 12
+    },
+    {
+      "user": "pus@gmail.com",
+      "email": "keval@gmail.com",
+      "password": "123555666",
+      "mobile": "998965464989",
+      "id": 13
+    },
+    {
+      "user": "raj",
+      "email": "qwerty@gmail.com",
+      "password": "1122",
+      "mobile": "9856984235",
+      "id": 15
+    },
+    {
+      "user": "manish",
+      "email": "pooja@gmail.com",
+      "password": "123456",
+      "mobile": "51696465146",
+      "id": 16
+    },
+    {
+      "user": "piyush",
+      "email": "k@gmail.com",
+      "password": "1122334455",
+      "mobile": "9856984235",
+      "id": 17
+    },
+    {
+      "user": "svn",
+      "email": "savan@gmail.com",
+      "password": "123123123",
+      "mobile": "9856984235",
+      "id": 18
+    }
+  ]
+}
