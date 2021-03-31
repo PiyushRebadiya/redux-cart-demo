@@ -7,9 +7,11 @@ import {
     Link,
     Redirect,
   } from "react-router-dom";
+  import { useSelector } from 'react-redux'
 
 
 const Navbar = () => {
+   const count = useSelector((state) => state.cart.cart.length)
   return (
     <div className="nav">
       <ul className="side">
@@ -21,6 +23,9 @@ const Navbar = () => {
         <li>
           <Link to="/cart" className="link">
             Cart
+            {
+              count > 0 && <span className="badge badge-danger">{count}</span>
+            }
           </Link>
         </li>
         {localStorage.getItem("login") ? (
