@@ -96,14 +96,14 @@ export const apiReducer = (state = apiInitialState, action) => {
       return {
         ...state,
         loading: true,
+        users: action.payload,
       };
     case FETCH_USERS_SUCCESS:
       console.log("action", action.payload);
       console.log("state", state);
       return {
         ...state,
-        loading: false,
-        users: action.payload,
+        loading: true,
         error: "",
       };
     case FETCH_USERS_FAILURE:

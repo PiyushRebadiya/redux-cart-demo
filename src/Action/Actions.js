@@ -37,7 +37,7 @@ export const fetchUsersFailure = (error) => ({
 
 export const fetchUsers = () => {
   return (dispatch) => {
-    dispatch(fetchUsersRequest);
+    dispatch(fetchUsersRequest());
     axios
       .get("http://localhost:3003/posts")
       .then((res) => {

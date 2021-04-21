@@ -12,7 +12,8 @@ import { useDispatch, useSelector } from "react-redux";
 const Login = (props) => {
   const [blank, setBlank] = useState([]);
 
-  const result = useSelector((state) => state.user.users);
+  const result = useSelector((state) => state.update.update);
+  console.log("result",result);
   const dispatch = useDispatch();
   const [loginStatus, setLoginStatus] = useState(false)
   let emailValidation = blank.email;
@@ -28,18 +29,18 @@ const Login = (props) => {
     console.log("login");
     dispatch(fetchUsers(blank))
     // fetch("http://localhost:3000/posts").then((data) => {
-    //   data.json().then((resp) => {
+      //   data.json().then((resp) => {
     //     // console.log("Data", resp);
-        let item = result.filter(
-          (value) =>
-            value.email === blank.email && value.password === blank.password
-        );
-        console.log('item',item);
-        if (item.length > 0) {
-          localStorage.setItem("login", JSON.stringify(item));
-          // props.history.push("/home");
-          toast.success("successfully!");
-          setTimeout(() => {
+    let item = result.filter(
+      (value) =>
+      value.email === blank.email && value.password === blank.password
+      );
+      console.log('item',item);
+      if (item.length > 0) {
+        localStorage.setItem("login", JSON.stringify(item));
+        // props.history.push("/home");
+        toast.success("successfully!");
+        setTimeout(() => {
             setLoginStatus(true)
           }, 2000);
         } else {
@@ -56,6 +57,7 @@ const Login = (props) => {
   const createAccount = () => {
     props.history.push("/new");
   };
+  
   if(loginStatus){
     return <Redirect to='/home'/>
   }
